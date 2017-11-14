@@ -1,18 +1,81 @@
-<html>
-   <head>
-       <title>
-           Testowa strona
-       </title>
-   </head>
-    <body>
-        
-        <p>Test</p>
-         <p>Test2</p>
-         <p>Test3</p>
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-         <p>Test4</p>
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-    </body>
-    
-    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,700|Montserrat:200,200i,400|Russo+One"
+          rel="stylesheet">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<header>
+    <div class="lang-selectr">
+        <div class="language pl transparent">PL</div>
+        <div class="language en transparent active">EN</div>
+    </div>
+    <div class="burger-wrapper">
+        <div class="menu btn" data-menu="5">
+            <div class="icon"></div>
+        </div>
+    </div>
+    <nav class="navigation">
+        <div class="navigation-menu"></div>
+    </nav>
+
+
+</header>
+<section id="main">
+    <img class="main-background" src="img/astronauts.jpg"/>
+
+</section>
+
+<!-- Add your site or application content here -->
+<!--1. Wybor jezyka (lewy górny róg)-->
+<!--2.  Menu - zajmuje prawą częśc ekranu (lub całość na mobile), krzyzyk jeździ w wraz ze scrollem-->
+
+<!--Header - animowanna grafika z kosmonautami - z wyjeżdzajcym napisem "Maciek Slotwinski - fullstack developer"-->
+<!--lead - napisane że szukam roboty jako junior full-stack-->
+<!--Portfolio - zajawka projektów w formie kwadratów właniających się z tła (ze skrótem technologii)-->
+
+
+<!--Pojedynczy projekt - wjeżdża na ekran w formie overlaya z krótkim opisem projektu, technologii i wniosków wyciągniętych z realizacji-->
+
+
+<p>Hello world! This is HTML5 Boilerplate.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus amet architecto consequatur, dolores esse
+    incidunt ipsum, iure libero magnam nam natus porro quidem rerum soluta ullam, unde voluptatibus! Aliquam.</p>
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
 </html>

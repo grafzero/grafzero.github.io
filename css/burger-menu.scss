@@ -1,0 +1,92 @@
+@import "colors.scss";
+
+
+// Based on Hamburger Menu by Matthew Blode
+// I changed sizes, positioning, etc.
+
+@mixin btn($right, $top) {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: $top;
+    //left: $left;
+    right:$right;
+    transition-duration: 0.5s;
+
+}
+
+@mixin icon($height, $width) {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: $height;
+    width: $width;
+    top: 10px;
+    background-color: $dark;
+
+}
+
+@mixin icon-before($height, $width, $top) {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: $width;
+    height: $height;
+    background-color: $dark;
+    content: "";
+    top: $top;
+}
+
+@mixin icon-after($height, $width, $top) {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: $width;
+    height: $height;
+    background-color: $dark;
+    content: "";
+    top: $top;
+}
+
+
+.burger-wrapper{
+    position: fixed;
+    background-color: $secondaryColor;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    z-index: 5;
+}
+
+
+
+.btn{
+    @include btn(15px, 18px);
+
+    .icon {
+        @include icon(5px, 30px);
+
+        &:before{
+            @include icon-before(5px, 30px, -10px);
+        }
+
+        &:after{
+            @include icon-after(5px, 30px, 9px);
+        }
+    }
+
+    &.open {
+        .icon {
+            transition: 0.5s;
+
+            &:before{
+                transform: rotateZ(-45deg) scaleX(0.75) translate(-9px, -3px);
+            }
+
+            &:after{
+                transform: rotateZ(45deg) scaleX(0.75) translate(-11px, 3px);
+            }
+        }
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
