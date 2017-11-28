@@ -47,13 +47,13 @@
 
 
 .burger-wrapper{
-    position: fixed;
+    position: absolute;
     background-color: $secondaryColor;
     top: 20px;
     width: 60px;
     height: 60px;
     right: 20px;
-    z-index: 5;
+    z-index: 11;
 }
 
 
