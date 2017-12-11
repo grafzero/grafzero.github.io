@@ -53,6 +53,7 @@ body.nav-visible {
     position: fixed;
     //this leaves inactive scroll-bar and prevents resize of window
     overflow-y: scroll;
+    width: 100%;
 }
 
 div#preloader {
@@ -89,7 +90,7 @@ header {
 
         div.language {
             float: left;
-            width: 49%;
+            width: 49.5%;
             height: 100%;
             line-height: 60px;
             text-align: center;
@@ -127,6 +128,34 @@ header {
         transition-duration: .3s;
         transition-timing-function: cubic-bezier(.6, .2, .1, 1);
         visibility: hidden;
+
+        ul.nav-ul{
+            margin-top: 0;
+            list-style: none;
+
+            p{
+                padding-top: 30px;
+                margin-top: 0;
+            }
+            li{
+                font-size: 2em;
+
+                a:link,
+                a:hover,
+                a:visited{
+                    text-decoration: none;
+                    color: $dark;
+                }
+
+            }
+
+
+        }
+
+
+
+
+
     }
 
     div.navigation-menu.visible {
@@ -341,7 +370,6 @@ section#lead{
         padding-top: 30px;
         padding-bottom: 30px;
         text-align: center;
-        max-width: 1700px;
         margin-left: 2%;
         margin-right: 2%;
 
@@ -375,7 +403,7 @@ section#projects {
         margin: 0 auto;
         WIDTH: 90%;
         background: $dark;
-        height: 1100px;
+        height: 1300px;
         max-width: 1700px;
         padding-top: 30px;
 
@@ -394,6 +422,8 @@ section#projects {
             float: left;
             position: relative;
             margin-top: 30px;
+            cursor: pointer;
+            cursor: hand;
 
 
             .project_background {
@@ -448,7 +478,7 @@ section#projects {
 
     div.project_full{
         height: 100vh;
-        background-color: red;
+        background-color: black;
         position: absolute;
         top: 0;
         width: 100%;
@@ -465,13 +495,47 @@ section#projects {
         }
 
     article.desc_full{
+        box-sizing: border-box;
         width:50%;
-        background-color: yellow;
+        background: #F2994A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         height: 100%;
         position: absolute;
         left:50%;
         padding: 0;
         margin: 0;
+        padding-left: 30px;
+
+
+        h2.project-full-title{
+            margin-top: 40%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            font-size: 3em;
+            text-align: center;
+        }
+
+        p.project-full-heading{
+            margin-top: 40px;
+            font-weight: 700;
+            text-align: center;
+            font-family: $primaryFont;
+            font-size: 1.7em;
+        }
+
+        p.project-full-text{
+            margin-top: 30px;
+            font-family: $primaryFont;
+            font-size: 1.3em;
+
+        }
+
+
     }
 
 
@@ -486,6 +550,20 @@ section#projects {
         background-size: cover;
     }
 
+    div.project_full#project2 > figure.screen_full{
+        background-image: url("../img/projects_poi.jpg");
+        background-size: cover;
+    }
+
+    div.project_full#project5 > figure.screen_full{
+        background-image: url("../img/projects_efekty.PNG");
+        background-size: cover;
+    }
+
+    div.project_full#project6 > figure.screen_full{
+        background-image: url("../img/projects_soft.PNG");
+        background-size: cover;
+    }
 
 
 
@@ -496,9 +574,11 @@ section#footer {
     background-color: $secondaryColor;
 
 
+
+
     div.callme_wrapper{
         text-align: center;
-        max-width: 1700px;
+
 
         a{
             text-decoration: none;
@@ -562,7 +642,14 @@ section#footer {
 ////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-@media only screen and (max-width: 767px) and (min-width: 360px) {
+@media only screen and (max-width: 767px) and (min-width: 266px) {
+
+    body{
+        background-color: $dark;
+    }
+
+
+
     header {
         div.navigation-menu {
             width: 100%;
@@ -574,10 +661,58 @@ section#footer {
         }
     }
 
+
+    section#main{
+
+        div.name-intro{
+            left: initial;
+            width: 100%;
+            top: 200px;
+
+
+            h1{font-size: 3.2em;
+            text-align: center;}
+            h4{font-size: 1.2em;
+                text-align: center;}
+        }
+
+        div.name-intro.name-intro-menu-layout{
+            height: 100%;
+            width: 100%;
+            max-width: none;
+            left: initial;
+
+
+            h1{font-size: 3.2em;
+                text-align: center;
+                position: absolute;
+                top: 100px;
+
+            }
+
+            h4 {
+                position: absolute;
+                top: 231px;
+                text-align: center;
+                width: inherit;
+
+                padding-left: 0;
+                max-width: none;
+
+            }
+
+        }
+
+
+
+    }
+
     section#projects {
         width: 100%;
-        background: white;
+        background: $dark;
         padding-top: 30px;
+        overflow: hidden;
+        padding-top: 0;
 
         margin: 0;
 
@@ -587,6 +722,7 @@ section#footer {
             article.project {
 
                 margin-right: 0;
+                margin-left: 0;
                 position: relative;
                 width: 100%;
                 clear: both;
@@ -612,6 +748,9 @@ section#footer {
                         }
 
                         .project_caption {
+                            h3,h4{
+                                color: $dark;
+                            }
 
                         }
 
@@ -647,9 +786,24 @@ section#footer {
         }
     }
 
+    section#main{
+        div.name-intro{
+
+            h1{font-size: 4.2em;}
+            h4{font-size: 1.2em;
+                text-align: initial;}
+        }
+
+        div.name-intro.name-intro-menu-layout{
+            top: 350px;
+        }
+
+    }
+
+
     section#projects {
         width: 100%;
-        background: white;
+        background: $dark;
         padding-top: 30px;
         margin: 0;
 
@@ -683,6 +837,9 @@ section#footer {
                         }
 
                         .project_caption {
+                            h3,h4{
+                                color: $dark;
+                            }
 
                         }
 
