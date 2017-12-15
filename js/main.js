@@ -85,10 +85,15 @@ $('ul.nav-ul li#contactLink').click (function(){
 // localization to pl
 $('div.language.pl.transparent').click(function(){
     $("[data-localize]").localize("slotwa", { language: "pl" });
+    $('div.language.en.transparent').removeClass("active");
+    $('div.language.pl.transparent').addClass("active");
 });
 
+// localization to en
 $('div.language.en.transparent').click(function(){
-    $("[data-localize]").localize("slotwa", { skipLanguage: "en" });
+    $("[data-localize]").localize("slotwa", { language: "en" });
+    $('div.language.pl.transparent').removeClass("active");
+    $('div.language.en.transparent').addClass("active");
 });
 
 
