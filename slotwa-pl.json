@@ -1,6 +1,6 @@
 {
     "lead": "Szukam pracy jako junior full stack developer",
-    "myProjectsHeading":"My tech stack includes Java, Spring, Hibernate, Javascript, HTML, CSS, and some Node.js. I'm more than willing to learn frameworks such as Angular or React.",
+    "myProjectsHeading":"Zakres poznanych technologii to: Java, Spring, Hibernate, Javascript, HTML, CSS, oraz podstawy some Node.js. Chętnie nauczę się frameworków JS np. React i Angular.",
     "myProjects": "Moje projekty",
     "copernicanaHeading": "Aplikacja do zarządzania grupami wycieczkowymi",
     "copernicanaText1": "Wykorzystane technologie: Java, JSP, Spring Boot 1.58, Spring Security, MySQL, H2, Bootstrap 3",
@@ -32,7 +32,9 @@
     "softHeading":"Strona www producenta poduszek dekoracyjnych",
     "softText1":"Zakres pracy obejmował stworzenie animacji loga w formacie svg oraz lokalizację zawartości.",
     "softText2":"Logo animowane jest za pomocą biblioteki vivus.js, informacja o wyświetleniu animacji przechowywana jest w local storage tak aby animacja nie pokazywała się po przeładowaniu strony. Lokalizacja teskstów wykonana jest za pomcą pluginu localize.js, który pozwala serwować treści w wybranym języku, przechowywane w formacie json. Automatyczny wybór języka na podstawie języka przeglądarki realizowany jest własnym skryptem, podobnie tłumaczenie placeholderów w formularzu kontaktowym.",
-    "softText3":"Odwiedź stronę"
+    "softText3":"Odwiedź stronę",
+
+    "contactMenu":"Kontakt"
 
 
 

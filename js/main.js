@@ -1,22 +1,6 @@
 // svg preloader
 $(window).on('load', function(){
-
-
-
     $('#preloader').fadeOut(2000);
-
-
-    function sleep(milliseconds) {
-        var start = new Date().getTime();
-        for (var i = 0; i < 1e7; i++) {
-            if ((new Date().getTime() - start) > milliseconds){
-                break;
-            }
-        }
-    }
-
-
-
 });
 
 
@@ -40,7 +24,7 @@ $('article.project:not(.inactive)').click (function(data){
     $(projectId).toggle(projectToggleDuration);
     $(projectId).addClass('active');
 
-    //scroll to section with project when project is clicked
+    // Currently not used, scroll to section with project when project is clicked
    // $("html, body").animate({ scrollTop: $('#projects').offset().top }, 1000);
 
     //disable scroling when project is displayed
@@ -100,7 +84,11 @@ $('ul.nav-ul li#contactLink').click (function(){
 
 // localization to pl
 $('div.language.pl.transparent').click(function(){
-    $("[data-localize]").localize("slotwa");
+    $("[data-localize]").localize("slotwa", { language: "pl" });
+});
+
+$('div.language.en.transparent').click(function(){
+    $("[data-localize]").localize("slotwa", { skipLanguage: "en" });
 });
 
 
