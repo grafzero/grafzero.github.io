@@ -32,9 +32,10 @@ $('div.language.en.transparent').click(function(){
 function switchLanguage(languageCode, codeForButton){
     var opts = {language: languageCode, pathPrefix: "lang"};
     console.log('Switching language to ' + languageCode);
+    $('div.language.'+codeForButton+'.transparent').removeClass("active");
+    $('div.language.'+languageCode+'.transparent').addClass("active");
     $("[data-localize]").localize("slotwa", opts);
-    $('div.language.'+opts[0]+'.transparent').removeClass("active");
-    $('div.language.'+opts[1]+'.transparent').addClass("active");
+
 
 }
 
