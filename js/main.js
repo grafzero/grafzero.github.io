@@ -39,16 +39,6 @@ function switchLanguage(languageCode, codeForButton){
 }
 
 
-
-
-
-
-
-
-
-
-
-
 // hamburger menu opening
 $('.burger-wrapper').click (function(){
     window.scrollTo(0, 0);
