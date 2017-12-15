@@ -15,14 +15,14 @@ $(window).on('load', function(){
 
 // localization to pl
 $('div.language.pl.transparent').click(function(){
-    console.log('swotching to PL');
+   // console.log('swotching to PL');
     switchLanguage('pl', 'en');
 
 });
 
 // localization to en
 $('div.language.en.transparent').click(function(){
-    console.log('switching to EN');
+  //  console.log('switching to EN');
     switchLanguage('en', 'pl');
 
 });
@@ -31,7 +31,7 @@ $('div.language.en.transparent').click(function(){
 
 function switchLanguage(languageCode, codeForButton){
     var opts = {language: languageCode, pathPrefix: "lang"};
-    console.log('Switching language to ' + languageCode);
+    //console.log('Switching language to ' + languageCode);
     $('div.language.'+codeForButton+'.transparent').removeClass("active");
     $('div.language.'+languageCode+'.transparent').addClass("active");
     $("[data-localize]").localize("slotwa", opts);
