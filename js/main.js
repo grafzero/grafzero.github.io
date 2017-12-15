@@ -16,13 +16,15 @@ $(window).on('load', function(){
 // localization to pl
 $('div.language.pl.transparent').click(function(){
     console.log('swotching to PL');
-    switchLanguage('en', 'pl');
+    switchLanguage('pl', 'en');
+
 });
 
 // localization to en
 $('div.language.en.transparent').click(function(){
-    console.log('swotching to EN');
-    switchLanguage('pl', 'en');
+    console.log('switching to EN');
+    switchLanguage('en', 'pl');
+
 });
 
 
