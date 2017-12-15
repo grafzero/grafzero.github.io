@@ -1,7 +1,50 @@
 // svg preloader
 $(window).on('load', function(){
+
+    if(navigator.language != 'pl'){
+        switchLanguage('en', 'pl');
+
+    } else {
+        switchLanguage('pl', 'en');
+
+    }
+
     $('#preloader').fadeOut(2000);
 });
+
+
+// localization to pl
+$('div.language.pl.transparent').click(function(){
+    console.log('swotching to PL');
+    switchLanguage('en', 'pl');
+});
+
+// localization to en
+$('div.language.en.transparent').click(function(){
+    console.log('swotching to EN');
+    switchLanguage('pl', 'en');
+});
+
+
+
+function switchLanguage(languageCode, codeForButton){
+    var opts = {language: languageCode, pathPrefix: "lang"};
+    console.log('Switching language to ' + languageCode);
+    $("[data-localize]").localize("slotwa", opts);
+    $('div.language.'+opts[0]+'.transparent').removeClass("active");
+    $('div.language.'+opts[1]+'.transparent').addClass("active");
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 // hamburger menu opening
@@ -82,19 +125,7 @@ $('ul.nav-ul li#contactLink').click (function(){
 });
 
 
-// localization to pl
-$('div.language.pl.transparent').click(function(){
-    $("[data-localize]").localize("slotwa", { language: "pl" });
-    $('div.language.en.transparent').removeClass("active");
-    $('div.language.pl.transparent').addClass("active");
-});
 
-// localization to en
-$('div.language.en.transparent').click(function(){
-    $("[data-localize]").localize("slotwa", { language: "en" });
-    $('div.language.pl.transparent').removeClass("active");
-    $('div.language.en.transparent').addClass("active");
-});
 
 
 
