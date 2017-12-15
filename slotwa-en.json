@@ -1,0 +1,41 @@
+{
+    "lead": "Currently looking for a challenging junior full stack developer position",
+    "myProjectsHeading":"My tech stack includes Java, Spring, Hibernate, Javascript, HTML, CSS, and some Node.js. I'm more than willing to learn frameworks such as Angular or React.",
+    "myProjects": "My projects",
+    "copernicanaHeading": "App for tourist groups management",
+    "copernicanaText1": "Technologies used: Java, JSP, Spring Boot 1.58, Spring Security, MySQL, H2, Bootstrap 3",
+    "copernicanaText2": "Application for a touroperator which simplifies work with tourist groups. From a begining developer's point of view the most interesting  Spring Profiles. Projekt podzieliłem na profile dev, staging oraz production z odpowiednimi branchami git oraz stosownymi aplikacjami na Heroku.",
+    "copernicanaText3": "Tabele w warstwie widoku generowane są za pomocą biblioteki Datatables, pozostałe komponenty za pomocą Boostrapa. Dodatkowo wybrane funkcjonalności realizowane są poprzez AJAX.",
+
+    "poisHeading": "Przewodnik interaktywny",
+    "poisText1": "Technologies used: Java, Spring, JSP, Hibernate, MySQL, Bootstrap 3.3.7, Google Geocoding API",
+    "poisText2": "Aplikacja prezentująca intersujące punkty w poblizu miejsca wskazanego przez użytkownika.",
+    "poisText3": "Zakres współrzędnych znajdujących się w obszarze interesującym użytkownika obliczany jest na serwerze, następnie potrzebne rekordy pobierane są z bazy danych.Baza zawiera około 18 000 rekordów.",
+
+    "productsHeading":"Aplikacja pozwalająca agregować i udostępniać tresci produktowe",
+    "productsText1":"Technologies used: Java, Spring, JSP, Hibernate, Jsoup, Apache POI, Postgres, Amazon AWS, Mailgun",
+    "productsText2":"Aplikacja w locie pobiera dane ze strony internetowej i pozwala pobrać je w formie paczki materiałów zip",
+    "productsText3":"Pliki zip zawierające obrazy, pliki xls i inne hostowane są na Amazon S3 obsługiwane przez Java API.",
+
+    "poibotHeading":"Bot dla FB Messenger z funkcjonalnościa projektu POI Guide",
+    "poibotText1":"Technologies used: Node.js, MySQL",
+    "poibotText2":"Program realizujący funkcjonalność aplikacji POI Gude, ale z wykorzystaniem platformy botowej Facebooka.",
+    "poibotText3":"Backend obsługiwany jest przez Node.js w połączeniu z bazą MySQL.",
+
+
+    "reportsTitle": "Efekty środowiskowe",
+    "reportsHeading": "Wewnętrzna aplikacja raportowa",
+    "reportsText1": "Technologies used: Oracle PL/SQL, MS SQL Server, Oracle APEX",
+    "reportsText2": "Aplikacja wykonana w ramach pracy zespołowej. Pełni rolę niewielkiej hurtowni danych na potrzeby raportowe Narodowego Funduszu Ochrony Środowiska i Gospodarki Wodnej.",
+    "reportsText3": "Program pobiera dane z bazy produkcyjnej, przetwarza je i usdostępnia w formie wygodnego kreatora raportów.",
+
+    "softHeading":"Strona www producenta poduszek dekoracyjnych",
+    "softText1":"Zakres pracy obejmował stworzenie animacji loga w formacie svg oraz lokalizację zawartości.",
+    "softText2":"Logo animowane jest za pomocą biblioteki vivus.js, informacja o wyświetleniu animacji przechowywana jest w local storage tak aby animacja nie pokazywała się po przeładowaniu strony. Lokalizacja teskstów wykonana jest za pomcą pluginu localize.js, który pozwala serwować treści w wybranym języku, przechowywane w formacie json. Automatyczny wybór języka na podstawie języka przeglądarki realizowany jest własnym skryptem, podobnie tłumaczenie placeholderów w formularzu kontaktowym.",
+    "softText3":"Visit site",
+
+    "contactMenu":"Contact"
+
+
+
+}
