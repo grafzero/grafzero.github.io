@@ -10,7 +10,6 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -1128,7 +1127,7 @@
                 <li data-item="1">Copernicana</li>
                 <li data-item="2">POI Guide</li>
                 <li data-item="3">Products</li>
-                <li data-item="4">POI bot</li>
+                <li>POI bot</li>
                 <li data-item="5">Efekty środowiskowe</li>
                 <li data-item="6">Soft creation</li>
             </ul>
@@ -1160,28 +1159,20 @@
 <section id="lead">
     <div class="lead_wrapper">
         <h2 data-localize="lead">Currently looking for a challenging junior full stack developer position</h2>
-
         <h3 data-localize="myProjectsHeading">My tech stack includes Java, Spring, Hibernate, Javascript, HTML, CSS, and
             some Node.js. I'm more than willing to learn frameworks such as Angular or React.</h3>
-
         <h4>0048 730 730 643</h4>
     </div>
-
 </section>
-
 <section id="projects">
-
     <div class="projects_wrapper">
-
         <!--Start of project thumbnails-->
-        <h3 data-localize="myProjectsHeading">Some of my projects:</h3>
+        <h3 data-localize="myProjects">Some of my projects:</h3>
         <article class="project" data-item="1">
             <div class="project_background">
                 <div class="project_content">
                     <div class="project_thumbnail">
-
                         <img src="img/projects_copernicana.jpg"/>
-
                     </div>
                     <div class="project_caption">
                         <h3>Copernicana</h3>
@@ -1190,18 +1181,15 @@
                 </div>
             </div>
         </article>
-
         <article class="project" data-item="2">
             <div class="project_background">
                 <div class="project_content">
                     <div class="project_thumbnail">
-
                             <img src="img/projects_poi.jpg"/>
-
                     </div>
                     <div class="project_caption">
                         <h3>POI guide</h3>
-                        <h4>Java, Spring, JSP, Hibernate,</h4>
+                        <h4>Java, Spring, JSP, Hibernate</h4>
                     </div>
                 </div>
             </div>
@@ -1211,46 +1199,38 @@
             <div class="project_background">
                 <div class="project_content">
                     <div class="project_thumbnail">
-
                             <img src="img/projects_models.jpg"/>
-
                     </div>
                     <div class="project_caption">
-                        <h3>Products</h3>
+                        <h3>Content tool</h3>
                         <h4>Java, Spring, Apache POI, Postgres</h4>
                     </div>
                 </div>
             </div>
         </article>
 
-        <article class="project" data-item="4">
+        <article class="project inactive">
             <div class="project_background">
-                <div class="project_content">
+                <div class="project_content inactive">
                     <div class="project_thumbnail">
-
                             <img src="img/projects_copernicana.jpg"/>
-
                     </div>
                     <div class="project_caption">
                         <h3>POI bot</h3>
-                        <h4>FB Messenger, Node.js, MySQL</h4>
+                        <h4>Work in progress</h4>
                     </div>
                 </div>
             </div>
         </article>
-
-
         <article class="project" data-item="5">
             <div class="project_background">
                 <div class="project_content">
                     <div class="project_thumbnail">
-
                             <img src="img/projects_efekty.PNG"/>
-
                     </div>
                     <div class="project_caption">
                         <h3>Efekty</h3>
-                        <h4>FB Messenger, Node.js, MySQL</h4>
+                        <h4>Oracle APEX, Oracle SQL, MS SQL Server</h4>
                     </div>
                 </div>
             </div>
@@ -1261,9 +1241,7 @@
             <div class="project_background">
                 <div class="project_content">
                     <div class="project_thumbnail">
-
                             <img src="img/projects_soft.PNG"/>
-
                     </div>
                     <div class="project_caption">
                         <h3>Soft Creation</h3>
@@ -1272,13 +1250,10 @@
                 </div>
             </div>
         </article>
-
     </div>
-
     <!--End of project thumbnails-->
 
     <!--Start of full projects-->
-
     <div class="project_full" id="project1">
         <figure class="screen_full">
             <a href="https://your-url" class="github-corner" aria-label="View source on Github">
@@ -1321,21 +1296,18 @@
         <article class="desc_full">
             <span class="close black"></span>
             <h2 class="project-full-title">Copernicana</h2>
-            <p class="project-full-heading">Aplikacja do zarządzania grupami wycieczkowymi</p>
-            <p class="project-full-text">Wykorzystane technologie: Java, JSP, Spring Boot 1.58, Spring Security, MySQL, H2, Bootstrap 3</p>
-            <p class="project-full-text">Program dla touroperatora ułatwiający zarządzanie grupami turystów.
+            <p data-localize="copernicanaHeading" class="project-full-heading">Aplikacja do zarządzania grupami wycieczkowymi</p>
+            <p data-localize="copernicanaText1" class="project-full-text">Wykorzystane technologie: Java, JSP, Spring Boot 1.58, Spring Security, MySQL, H2, Bootstrap 3</p>
+            <p data-localize="copernicanaText2" class="project-full-text">Program dla touroperatora ułatwiający zarządzanie grupami turystów.
                 Z punktu widzenia początkującego developera najciekawsze było użycie funkcji Spring Profiles.
                 Projekt podzieliłem na profile dev, staging oraz production z odpowiednimi branchami git oraz stosownymi
                 aplikacjami na Heroku.</p>
 
-            <p class="project-full-text">Tabele w warstwie widoku generowane są za pomocą biblioteki Datatables, pozostałe komponenty za pomocą
+            <p data-localize="copernicanaText3" class="project-full-text">Tabele w warstwie widoku generowane są za pomocą biblioteki Datatables, pozostałe komponenty za pomocą
                 Boostrapa. Dodatkowo wybrane funkcjonalności realizowane są poprzez AJAX.
-
             </p>
-
         </article>
     </div>
-
     <div class="project_full" id="project2">
         <figure class="screen_full">
             <a href="https://your-url" class="github-corner" aria-label="View source on Github">
@@ -1380,16 +1352,14 @@
         <article class="desc_full">
             <span class="close black"></span>
             <h2 class="project-full-title">Points Of Interest</h2>
-            <p class="project-full-heading">Przewodnik interaktywny</p>
-            <p class="project-full-text">Wykorzystane technologie: Java, Spring, JSP, Hibernate, MySQL, Bootstrap 3.3.7, Google Geocoding API</p>
-            <p class="project-full-text">Aplikacja prezentująca intersujące punkty w poblizu miejsca wskazanego przez użytkownika.</p>
-            <p class="project-full-text">Zakres współrzędnych znajdujących się w obszarze interesującym użytkownika oblicznay jest na serwerze, następnie potrzebne rekordy pobierane są z bazy danych.
+            <p data-localize="poisHeading"  class="project-full-heading">Przewodnik interaktywny</p>
+            <p data-localize="poisText1"  class="project-full-text">Wykorzystane technologie: Java, Spring, JSP, Hibernate, MySQL, Bootstrap 3.3.7, Google Geocoding API</p>
+            <p data-localize="poisText2" class="project-full-text">Aplikacja prezentująca intersujące punkty w poblizu miejsca wskazanego przez użytkownika.</p>
+            <p data-localize="poisText3" class="project-full-text">Zakres współrzędnych znajdujących się w obszarze interesującym użytkownika oblicznay jest na serwerze, następnie potrzebne rekordy pobierane są z bazy danych.
                 Baza zawiera około 18 000 rekordów.
             </p>
-
         </article>
     </div>
-
     <div class="project_full" id="project3">
         <figure class="screen_full">
             <a href="https://your-url" class="github-corner" aria-label="View source on Github">
@@ -1433,11 +1403,11 @@
         </figure>
         <article class="desc_full">
             <span class="close black"></span>
-            <h2 class="project-full-title">Products</h2>
-            <p class="project-full-heading">Aplikacja pozwalająca agregować i udostępniać tresci produktowe</p>
-            <p class="project-full-text">Wykorzystane technologie: Java, Spring, JSP, Hibernate, Jsoup, Apache POI, Postgres, Amazon AWS, Mailgun</p>
-            <p class="project-full-text">Aplikacja w locie pobiera dane ze strony internetowej i pozwala pobrać je w formie paczki materiałów zip.</p>
-            <p class="project-full-text">Pliki zip zawierające obrazy, pliki xls i inne hostowane są na Amazon S3 obsługiwane przez Java API.
+            <h2  class="project-full-title">Products</h2>
+            <p data-localize="productsHeading" class="project-full-heading">Aplikacja pozwalająca agregować i udostępniać tresci produktowe</p>
+            <p data-localize="productsText1"  class="project-full-text">Wykorzystane technologie: Java, Spring, JSP, Hibernate, Jsoup, Apache POI, Postgres, Amazon AWS, Mailgun</p>
+            <p data-localize="productsText2"  class="project-full-text">Aplikacja w locie pobiera dane ze strony internetowej i pozwala pobrać je w formie paczki materiałów zip.</p>
+            <p data-localize="productsText3"  class="project-full-text">Pliki zip zawierające obrazy, pliki xls i inne hostowane są na Amazon S3 obsługiwane przez Java API.
 
             </p>
 
@@ -1446,52 +1416,15 @@
 
     <div class="project_full" id="project4">
         <figure class="screen_full">
-            <a href="https://your-url" class="github-corner" aria-label="View source on Github">
-                <svg width="80" height="80" viewBox="0 0 250 250"
-                     style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);"
-                     aria-hidden="true">
-                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-                    <path
-                        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-                    <path
-                        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                        fill="currentColor" class="octo-body"></path>
-                </svg>
-                <style>.github-corner:hover .octo-arm {
-                    animation: octocat-wave 560ms ease-in-out
-                }
 
-                @keyframes octocat-wave {
-                    0%, 100% {
-                        transform: rotate(0)
-                    }
-                    20%, 60% {
-                        transform: rotate(-25deg)
-                    }
-                    40%, 80% {
-                        transform: rotate(10deg)
-                    }
-                }
-
-                @media (max-width: 500px) {
-                    .github-corner:hover .octo-arm {
-                        animation: none
-                    }
-
-                    .github-corner .octo-arm {
-                        animation: octocat-wave 560ms ease-in-out
-                    }
-                }</style>
-            </a>
         </figure>
         <article class="desc_full">
             <span class="close black"></span>
             <h2 class="project-full-title">POI bot (work in progress)</h2>
-            <p class="project-full-heading">Bot dla FB Messenger z funkcjonalnościa projektu POI Guide </p>
-            <p class="project-full-text">Wykorzystane technologie: Node.js, MySQL</p>
-            <p class="project-full-text">Program realizujący funkcjonalność aplikacji POI Gude, ale z wykorzystaniem platformy botowej Facebooka.</p>
-            <p class="project-full-text"> Backend obsługiwany jest przez Node.js w połączeniu z bazą MySQL.
+            <p data-localize="poibotHeading" class="project-full-heading">Bot dla FB Messenger z funkcjonalnościa projektu POI Guide </p>
+            <p data-localize="poibotText1" class="project-full-text">Wykorzystane technologie: Node.js, MySQL</p>
+            <p data-localize="poibotText2" class="project-full-text">Program realizujący funkcjonalność aplikacji POI Gude, ale z wykorzystaniem platformy botowej Facebooka.</p>
+            <p data-localize="poibotText3" class="project-full-text"> Backend obsługiwany jest przez Node.js w połączeniu z bazą MySQL.
             </p>
 
         </article>
@@ -1502,11 +1435,11 @@
         </figure>
         <article class="desc_full">
             <span class="close black"></span>
-            <h2 class="project-full-title">Efekty środowiskowe</h2>
-            <p class="project-full-heading">Wewnątrzna aplikacja raportowa</p>
-            <p class="project-full-text">Wykorzystane technologie: Oracle PL/SQL, MS SQL Server, Oracle APEX</p>
-            <p class="project-full-text">Aplikacja wykonana w ramach pracy zespołowej. Pełni rolę niewielkiej hurtowni danych na potrzeby raportowe Narodowego Funduszu Ochrony Środowiska i Gospodarki Wodnej. </p>
-            <p class="project-full-text">Program pobiera dane z bazy produkcyjnej, przetwarza je i usdostępnia w formie wygodnego kreatora raportów.</p>
+            <h2 data-localize="reportsTitle" class="project-full-title">Efekty środowiskowe</h2>
+            <p data-localize="reportsHeading" class="project-full-heading">Wewnątrzna aplikacja raportowa</p>
+            <p data-localize="reportsText1" class="project-full-text">Wykorzystane technologie: Oracle PL/SQL, MS SQL Server, Oracle APEX</p>
+            <p data-localize="reportsText2" class="project-full-text">Aplikacja wykonana w ramach pracy zespołowej. Pełni rolę niewielkiej hurtowni danych na potrzeby raportowe Narodowego Funduszu Ochrony Środowiska i Gospodarki Wodnej. </p>
+            <p data-localize="reportsText3" class="project-full-text">Program pobiera dane z bazy produkcyjnej, przetwarza je i usdostępnia w formie wygodnego kreatora raportów.</p>
         </article>
     </div>
 
@@ -1554,21 +1487,17 @@
         <article class="desc_full">
             <span class="close black"></span>
             <h2 class="project-full-title">Soft creation</h2>
-            <p class="project-full-heading">Strona www producenta poduszek dekoracyjnych</p>
-            <p class="project-full-text"> Zakres pracy obejmował stworzenie snimacji loga w formacie svg oraz lokalizację zawartości.</p>
-            <p class="project-full-text"> Logo animowane jest za pomocą biblioteki vivus.js, informacja o wyświetleniu animacji przechowywana jest w local storage tak aby animacja nie pokazywała się po przeładowaniu strony.
+            <p data-localize="softHeading" class="project-full-heading">Strona www producenta poduszek dekoracyjnych</p>
+            <p data-localize="softText1" class="project-full-text"> Zakres pracy obejmował stworzenie animacji loga w formacie svg oraz lokalizację zawartości.</p>
+            <p data-localize="softText2" class="project-full-text"> Logo animowane jest za pomocą biblioteki vivus.js, informacja o wyświetleniu animacji przechowywana jest w local storage tak aby animacja nie pokazywała się po przeładowaniu strony.
                 Lokalizacja teskstów wykonana jest za pomcą pluginu localize.js, który pozwala serwować treści w wybranym języku, przechowywane w formacie json.
                 Automatyczny wybór języka na podstawie języka przeglądarki realizowany jest własnym skryptem, podobnie tłumaczenie placeholderów w formularzu kontaktowym.
             </p>
-            <a href="http://www.softcreation.pl">Odwiedź stronę</a>
-
+            <a data-localize="softText3" href="http://www.softcreation.pl">Odwiedź stronę</a>
         </article>
     </div>
-
     <!--End of full projects-->
-
 </section>
-
 <section id="footer">
     <div class="callme_wrapper">
         <h2><a href="tel:0048730730643">+ 48 730 730 643</a></h2>
