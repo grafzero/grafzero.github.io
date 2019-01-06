@@ -1,6 +1,6 @@
 {
-    "lead": "Szukam pracy jako junior full stack developer",
-    "myProjectsHeading":"Zakres poznanych technologii to: Java, Spring, Hibernate, Javascript, HTML, CSS, oraz podstawy some Node.js. Chętnie nauczę się frameworków JS np. React i Angular.",
+    "lead": "Obecnie pracuję jako Java Developer",
+    "myProjectsHeading":"Mój stack obejmuje: Java, Spring, Hibernate, Javascript, HTML, CSS. Poznaję również inne frameworki jak np. Angular, oraz innne języki - Pyhon. (Zobacz też mój profil na <a href=\"https://www.linkedin.com/in/slotwa/\">linkedin</a>)",
     "myProjects": "Moje projekty",
     "copernicanaHeading": "Aplikacja do zarządzania grupami wycieczkowymi",
     "copernicanaText1": "Wykorzystane technologie: Java, JSP, Spring Boot 1.58, Spring Security, MySQL, H2, Bootstrap 3",
