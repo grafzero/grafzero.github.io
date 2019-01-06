@@ -31,12 +31,9 @@ $('div.language.en.transparent').click(function(){
 
 function switchLanguage(languageCode, codeForButton){
     var opts = {language: languageCode, pathPrefix: "lang"};
-    //console.log('Switching language to ' + languageCode);
     $('div.language.'+codeForButton+'.transparent').removeClass("active");
     $('div.language.'+languageCode+'.transparent').addClass("active");
     $("[data-localize]").localize("slotwa", opts);
-
-
 }
 
 
@@ -110,10 +107,8 @@ $('ul.nav-ul li#contactLink').click (function(){
     $('.name-intro').toggleClass('name-intro-menu-layout');
     $('.layer').toggleClass('zoomed');
 
-
     //scroll to section with project when project is clicked
     $("html, body").animate({ scrollTop: $('#contacts').offset().top }, 1000);
-
 
 });
 

@@ -489,6 +489,9 @@ section#projects {
   section#projects div.project_full#project3 > figure.screen_full {
     background-image: url("../img/projects_models.jpg");
     background-size: cover; }
+  section#projects div.project_full#project4 > figure.screen_full {
+    background-image: url("../img/projects_motokariera2.jpg");
+    background-size: cover; }
   section#projects div.project_full#project5 > figure.screen_full {
     background-image: url("../img/projects_efekty.PNG");
     background-size: cover; }

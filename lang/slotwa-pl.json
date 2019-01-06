@@ -17,10 +17,10 @@
     "productsText2":"Aplikacja w locie pobiera dane ze strony internetowej i pozwala pobrać je w formie paczki materiałów zip",
     "productsText3":"Pliki zip zawierające obrazy, pliki xls i inne hostowane są na Amazon S3 obsługiwane przez Java API.",
 
-    "poibotHeading":"Bot dla FB Messenger z funkcjonalnościa projektu POI Guide",
-    "poibotText1":"Wykorzystane technologie: Node.js, MySQL",
-    "poibotText2":"Program realizujący funkcjonalność aplikacji POI Gude, ale z wykorzystaniem platformy botowej Facebooka.",
-    "poibotText3":"Backend obsługiwany jest przez Node.js w połączeniu z bazą MySQL.",
+    "poibotHeading":"Strona motokariera.pl",
+    "poibotText1":"Wykorzystane technologie: Java, Spring Boot, Apache Tika, Spring Data JPA",
+    "poibotText2":"Strona wspomagająca rekrutację w branży motoryzacyjnej. Umożliwia logowanie, aplikowanie na oferty, zarządzanie ofertami, itp.",
+    "poibotText3":"Zgodna z wymogami RODO, pozwala również na wyszukiwanie słów kluczowych w przesłanych cv kandydatów w różnych formatach.",
 
 
     "reportsTitle": "Efekty środowiskowe",

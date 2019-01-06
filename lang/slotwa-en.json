@@ -17,10 +17,10 @@
     "productsText2":"Program scrapes website in real time and packages data into zip files containing xls files and images.",
     "productsText3":"Zip files with data are hosted on Amazon S3 handled by Java API.",
 
-    "poibotHeading":"Bot dla FB Messenger z funkcjonalnościa projektu POI Guide",
-    "poibotText1":"Technologies used: Node.js, MySQL",
-    "poibotText2":"Program realizujący funkcjonalność aplikacji POI Gude, ale z wykorzystaniem platformy botowej Facebooka.",
-    "poibotText3":"Backend obsługiwany jest przez Node.js w połączeniu z bazą MySQL.",
+    "poibotHeading":"Motokariera.pl",
+    "poibotText1":"Technologies used: Java, Spring Boot, Apache Tika, Spring Data JPA",
+    "poibotText2":"Page of automotive recruitment company. Enables sign in, application to job offers, offer managent etc.",
+    "poibotText3":"GDPR compliant, has a possibility to automatically search for keywords in candidates resumes in various formats.",
 
 
     "reportsTitle": "Reporting app",
